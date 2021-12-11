@@ -11,8 +11,8 @@ Bonus::Bonus(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
 {
     //set random x, y position
     QRandomGenerator *rg = QRandomGenerator::global();
-    int random_number_x = rg->bounded(50,650);
-    int random_number_y = rg->bounded(50,450);
+    int random_number_x = rg->bounded(70,630);
+    int random_number_y = rg->bounded(70,430);
     setPos( random_number_x, random_number_y );
 
     // drew the rect
