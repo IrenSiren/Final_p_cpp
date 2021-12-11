@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     scene->setBackgroundBrush(QBrush(QImage(":/images/gam.jpg")));
     // spawn bonus & obst
     QRandomGenerator *rg = QRandomGenerator::global();
-    int num_of_bonus = rg->bounded(0,7);
+    int num_of_bonus = rg->bounded(1,7);
     QVector<Bonus*> vec_b;
     vec_b.resize(num_of_bonus);
     for(int i = 0; i < num_of_bonus; i++)
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
         vec_b[i] = bon;
     };
 
-    int num_of_obst = rg->bounded(0,4);
+    int num_of_obst = rg->bounded(1,4);
     QVector<Obstical*> vec_o;
     vec_o.resize(num_of_obst);
     for(int i = 0; i < num_of_obst; i++)
